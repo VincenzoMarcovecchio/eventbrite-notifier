@@ -2,10 +2,7 @@ import React, { ReactElement } from 'react';
 import cheerio from "cheerio";
 import axios from "axios"
 import { useRouter } from 'next/router';
-// Delete this if runtime JavaScript is needed:
-export const config = {
-  unstable_runtimeJS: false,
-};
+
 
 interface Props {
   title?: string;

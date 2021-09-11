@@ -1,5 +1,4 @@
-import React from 'react';
-import Image from 'next/image';
+
 import { useRouter } from 'next/router';
 
 export default function DeleteMe() {
@@ -9,15 +8,15 @@ export default function DeleteMe() {
       <section id="hero">
         <h1>Event Sold Out!? </h1>
         <p>Here is your last chance</p>
-        <a
+        <button
         onClick={() =>
-          router.push(`/events/romhack2021-tickets-151680104275`).then(() => window.scrollTo(0, 0))
+          router.push(`/events/romhack2021-tickets-151680104275`)
         }
    
    
       >
         Search
-      </a>
+      </button>
       </section>
       
         {/* FOOTER */}

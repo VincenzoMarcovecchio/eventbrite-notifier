@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+
 import Meta from '@utils/Meta';
 import DeleteMe from '@components/DeleteMe';
 // Delete this if runtime JavaScript is needed:
@@ -7,13 +7,10 @@ export const config = {
 };
 
 export default function Home() {
-  
-
   return (
     <>
-      <Meta /><DeleteMe />
-     
-      
+      <Meta />
+      <DeleteMe />
     </>
   );
 }
