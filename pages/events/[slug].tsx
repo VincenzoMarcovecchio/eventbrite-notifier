@@ -8,7 +8,7 @@ export const config = {
 };
 
 interface Props {
-  title: string;
+  title?: string;
   lastScraped?: string;
  
 }
@@ -39,7 +39,7 @@ export default function Home({title,lastScraped}: Props): ReactElement  {
   );
 }
 
-export async function getServerSideProps(pageContext) {
+export async function getServerSideProps(pageContext:any) {
   const pageNumber = pageContext.query.slug;
   const { data } = await axios.get(
     `https://www.eventbrite.it/e/${pageNumber}`
